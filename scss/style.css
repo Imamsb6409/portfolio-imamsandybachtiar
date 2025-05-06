@@ -34,7 +34,7 @@ header .logo {
 }
 header nav ul {
   display: flex;
-  gap: 10px;
+  row-gap: 10px;
   padding: 0;
   list-style: none;
   align-items: center;
@@ -47,6 +47,10 @@ header nav ul li {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 header nav ul li:hover {
+  position: relative;
+  top: 1em;
+  margin-top: -1em;
+  padding-top: 3em;
   background-color: rgb(86, 211, 236);
 }
 header nav ul li:hover a {
@@ -109,6 +113,10 @@ header nav ul li a {
   border-radius: 5px;
   box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2);
   font-size: 16px;
+}
+.home .opening .hero .hero-button a:hover {
+  background-color: white;
+  color: #23d43e;
 }
 .home .opening #about-me {
   display: flex;
